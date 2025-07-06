@@ -1,6 +1,5 @@
 const btn_menu = document.querySelector("#btn-menu");
 const btn_close = document.querySelector("#btn-close");
-const btn_send = document.querySelector("#btn-send-curriculum")
 const sidebar = document.querySelector('.sidebar');
 const main = document.querySelector(".main");
 const header = document.querySelector(".header");
@@ -32,9 +31,6 @@ links.forEach((el) => {
     })
 })
 
-btn_send.addEventListener('click', ()=>{
-    window.alert("Seu currículo foi enviado!");
-    location.refresh();
-})
+
 // script das animações
 AOS.init();
