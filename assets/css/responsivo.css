@@ -1,4 +1,4 @@
-@media screen and (min-width: 577px) {
+@media screen and (min-width: 600px) {
     section {
         width: 90vw;
     }
@@ -48,11 +48,6 @@
         color: rgb(210, 201, 201);
     }
 
-   
-}
-
-
-@media screen and (min-width: 600px) {
     .home-text h2 {
         font-size: 2.5rem;
     }
