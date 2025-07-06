@@ -1,0 +1,187 @@
+@media screen and (min-width: 577px) {
+    section {
+        width: 90vw;
+    }
+
+    .header {
+        width: 100%;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        background-color: rgb(200, 196, 196);
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .logo img {
+        width: 40px;
+    }
+
+    .menu-hamburguer {
+        display: none;
+    }
+
+    .menu {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: rgb(24, 23, 23);
+        gap: 20px;
+    }
+
+    .menu a {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        text-decoration: none;
+        color: white;
+        font-size: 1rem;
+        transition: background-color .1s linear;
+    }
+
+    .menu li a:hover {
+        background-color: rgb(24, 23, 23);
+        font-weight: normal;
+        color: rgb(210, 201, 201);
+    }
+
+   
+}
+
+
+@media screen and (min-width: 600px) {
+    .home-text h2 {
+        font-size: 2.5rem;
+    }
+}
+
+
+@media screen and (min-width: 676px) {
+    .contact-networking {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+        gap: 20px;
+    }
+}
+
+
+@media screen and (min-width:768px) {
+    section {
+        width: 80vw;
+    }
+
+    section:first-of-type {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .home {
+        gap: 20px;
+    }
+    .home-text {
+        width: 60%;
+    }
+
+    .home-text h1 {
+        font-size:2rem;
+    }
+
+    .home-text h2 {
+        margin: 2px 0;
+    }
+
+    .home-img {
+        display: flex;
+        align-items: center;
+        width: 35%;
+    }
+
+    .home-img img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    #btn-agendar {
+        width: 70%;
+    }
+
+    #section-benefits {
+        width: 100vw;
+        padding: 0 30px;
+    }
+
+    .card {
+        width: 220px;
+        height: 220px;
+    }
+
+}
+
+
+@media screen and (min-width:920px) {
+    .home-text {
+        padding-left: 50px;
+    }
+
+    .home-text h2 {
+        font-size: 3rem;
+        margin: 10px 0;
+    }
+
+    form {
+        max-width: 60vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            'title title'
+            'name lastname'
+            'email phone'
+            'city state'
+            'curriculum curriculum';
+    }
+}
+
+
+@media screen and (min-width:1024px) {
+
+    section:first-of-type {
+        width: 90%;
+    }
+
+    .home-text h1 {
+        font-size:2.5rem;
+    }
+
+    .card {
+        width: 260px;
+        height: 260px;
+    }
+
+    .services {
+        padding: 20px 55px;
+    }
+}
+
+
+@media screen and (min-width:1200px) {
+    .home-img img {
+        width: 95%;
+    }
+
+    .home-text h1 {
+        font-size:3rem;
+    }
+
+    .home-text h2 {
+        margin: 40px 0;
+    }
+
+    .contact {
+        width: 70vw;
+        margin: 0 auto;
+    }
+}

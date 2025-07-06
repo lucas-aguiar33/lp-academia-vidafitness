@@ -1,0 +1,423 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(11, 10, 10);
+    color:white;
+    overflow-x: hidden;
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:20px;
+    background-color: rgb(200, 196, 196);
+    position: sticky;
+    top:0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap:5px;
+    color:black;
+    font-size:1.2rem;
+    font-weight: bold;
+}
+
+.logo img {
+    width:25px;
+}
+
+#btn-menu {
+    width:25px;
+    cursor: pointer;
+}
+
+.menu {
+    display: none;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width:70vw;
+    min-height: 100vh;
+    position:absolute;
+    top:0;
+    right:0;
+    z-index:3;
+    background-color: rgb(24, 23, 23);
+    display: none;
+}
+
+.sidebar-header {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:14px;
+    border-bottom:1px solid rgb(103, 10, 10);
+
+}
+
+.sidebar-header h3::first-letter {
+    color:red;
+}
+
+.sidebar-header-logo {
+    display: flex;
+    align-items: center;
+    gap:5px;
+}
+
+.sidebar-header-logo img {
+    width:30px;
+}
+
+.side-menu {
+    list-style-type: none;
+}
+
+.side-menu a {
+    display: block;
+    width:100%;
+    padding:12px;
+    padding-left:20px;
+    text-decoration: none;
+    color:white;
+    font-size:1rem;
+    transition: background-color .1s linear;
+}
+
+.side-menu a:hover {
+    background-color:rgb(65, 63, 63);
+    font-weight: 600;
+}
+
+#btn-close {
+    font-size:1.8rem;
+    cursor: pointer;
+}
+
+section {
+    margin:65px auto;
+    padding:20px;
+}
+
+.home {
+    display: flex;
+    flex-flow:row wrap;
+}
+
+.home-text {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.home-text h1 {
+    font-size:2rem;
+    font-weight: bold;
+}
+
+.home-text p {
+    font-size:1rem;
+    margin-top:10px;
+}
+
+.home-text p:first-of-type {
+    color:rgb(202, 196, 196);
+    font-size:1.2rem;
+    margin-top:0;
+}
+
+.home-text h2 {
+    font-size:3rem;
+    margin:20px 0;
+    color:rgb(207, 202, 202);
+}
+
+h2 span, .home h2::first-letter, .logo span::first-letter {
+    color:red;
+}
+
+.home-img {
+    display: none;
+}
+
+#btn-agendar {
+    width:100%;
+    padding:20px;
+    font-size:1.2rem;
+    border:none;
+    border-radius:10px;
+    background-color:rgb(255, 96, 68);
+    color:white;
+    font-weight: bold;
+    margin-top:5px;
+    transition:all .3s;
+    cursor: pointer;
+}
+
+#btn-agendar:hover {
+    background-color: rgb(199, 46, 19);
+    transition: all .3s;
+}
+
+.title {
+    text-align: center;
+    font-size:2rem;
+    margin-bottom:40px;
+    color:white;
+}
+
+.title::first-letter {
+    font-size:2.3rem;
+}
+
+.benefits {
+    text-align: center;
+}
+
+.card {
+    display: inline-block;
+    width:250px;
+    height: 250px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    border-radius:50%;
+    border:1px solid black;
+    position:relative;
+    transition: transform 0.2s;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card span {
+    font-size:1.8rem;
+    font-weight: bold;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    color:white;
+    text-align: center;
+    text-shadow: -1px -2px 10px black;
+}
+
+.card-img {
+    position:absolute;
+    inset:0;
+    border-radius:50%;
+    opacity: 0.8;
+}
+
+.card-img.one {
+    background:url('../images/hipertrofia.jpg');
+}
+
+.card-img.two {
+    background: url('../images/emagrecimento.jpg');
+}
+
+.card-img.three {
+    background: url('../images/estresse.jpg') no-repeat left center;
+}
+
+.services {
+    color:white;
+    background-color: rgb(40, 38, 38);
+    padding: 20px 40px;
+    position:relative;
+    border:3px solid red;
+    border-radius:20px;
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.services::after {
+    content: ' ';
+    display: block;
+    position:absolute;
+    inset:0;
+    border:3px solid lightgray;
+    margin:3px;
+    border-radius:20px;
+}
+
+.services li {
+    margin-bottom:10px;
+    font-size:1.3rem;
+}
+
+.about-text {
+    line-height: 1.5rem;
+}
+
+.about-text p {
+    margin-bottom:12px;
+}
+
+.about-img {
+    height:400px;
+    background: url('../images/halteres-background.jpg') no-repeat center center;
+    background-size:cover;
+    opacity: 0.6;
+    border-radius:10px;
+    margin-top:10px;
+}
+
+.contact {
+    color:white;
+    background-color: rgb(40, 38, 38);
+    padding:20px;
+}
+
+.contact p {
+    color: rgb(224, 218, 218);
+    margin:10px 0 10px 0;
+    text-align: center;
+}
+
+.input-group-networking {
+    margin-top:30px;
+    display: flex;
+    align-items: center;
+    gap:5px;
+}
+
+.input-group-networking img {
+    width:30px;
+}
+
+.collaborator p {
+    margin-bottom:10px;
+}
+
+.collaborator > h3:first-of-type {
+    color:rgb(167, 163, 163);
+    font-weight: 400;
+    text-align: center;
+}
+
+form {
+    max-width: 500px;
+    border:2px solid rgb(0, 0, 0);
+    border-radius:10px;
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+    margin:30px auto 0 auto;
+    background-color: white;
+    color:black;
+    border:3px dotted red;
+    
+}
+
+form > h3 {
+    text-align: center;
+    font-size:1.5rem;
+    margin-bottom:20px;
+}
+
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap:3px;
+}
+
+.input-group input:not(.curriculum) {
+    max-width: 600px;
+    padding:10px;
+    border-radius:6px;
+    outline:none;
+    border:1px solid gray;
+}
+
+#btn-send-curriculum {
+    font-size:1rem;
+    font-weight: 600;
+    background-color:rgb(233, 71, 71);
+    color:white;
+    border:none;
+    border-radius:10px;
+    padding:16px;
+    margin-top:20px;
+    cursor: pointer;
+    transition: background-color .2s linear;
+}
+
+#btn-send-curriculum:hover {
+    background-color:rgb(195, 48, 48);
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:5px;
+    padding: 12px 0;
+    background-color: rgb(44, 43, 43);
+    border-top:2px solid lightgrey;
+    color:rgb(215, 215, 215);
+    margin-top:60px;
+}
+
+.footer > div {
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+
+.footer-text::first-letter {
+    font-size:1.5rem;
+    color:red;
+}
+
+.footer img {
+    width:35px;
+}
+
+.active {
+    display: block;
+}
+
+.title-form{
+    grid-area: title;
+}
+.name {
+    grid-area: name;
+}
+.lastname {
+    grid-area: lastname;
+}
+.email {
+    grid-area: email;
+}
+.phone {
+    grid-area: phone;
+}
+.state {
+    grid-area: state;
+}
+.city {
+    grid-area: city;
+}
+.curriculum {
+    grid-area: curriculum;
+}
