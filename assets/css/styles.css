@@ -176,7 +176,6 @@ h2 span, .home h2::first-letter, .logo span::first-letter {
     text-align: center;
     font-size:2rem;
     margin-bottom:55px;
-    border:1px solid white;
     color:white;
 }
 
