@@ -55,12 +55,12 @@
 
 
 @media screen and (min-width: 676px) {
-    .contact-networking {
+    /* .contact-networking {
         display: grid;
         grid-template-columns: 1fr 1fr;
         place-items: center;
         gap: 20px;
-    }
+    } */
 }
 
 
@@ -127,6 +127,22 @@
         margin: 10px 0;
     }
 
+    .contact {
+        display: flex;
+        align-items: center;
+        gap:40px;
+    }
+    .contact-networking {
+        width:50%;
+        padding-left:50px;
+    }
+
+    .contact-img {
+        display: block;
+        text-align: center;
+        width: 50%;
+    }
+
     form {
         max-width: 60vw;
         display: grid;
@@ -163,8 +179,8 @@
 
 
 @media screen and (min-width:1200px) {
-    .home-img img {
-        width: 95%;
+    section {
+        width:70vw;
     }
 
     .home-text h1 {
@@ -174,9 +190,7 @@
     .home-text h2 {
         margin: 40px 0;
     }
-
-    .contact {
-        width: 70vw;
-        margin: 0 auto;
+    .home-img img {
+        width: 95%;
     }
 }
