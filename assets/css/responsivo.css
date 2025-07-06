@@ -190,6 +190,9 @@
     .home-text h2 {
         margin: 40px 0;
     }
+    .home-text p {
+        font-size:1.2rem;
+    }
     .home-img img {
         width: 95%;
     }
