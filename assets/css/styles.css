@@ -263,6 +263,11 @@ h2 span, .home h2::first-letter, .logo span::first-letter {
     font-size:1.3rem;
 }
 
+.about {
+    background-color: rgb(40, 38, 38);
+    padding:20px;
+}
+
 .about-text {
     line-height: 1.5rem;
 }
