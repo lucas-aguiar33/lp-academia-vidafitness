@@ -58,16 +58,6 @@
 }
 
 
-@media screen and (min-width: 676px) {
-    /* .contact-networking {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        place-items: center;
-        gap: 20px;
-    } */
-}
-
-
 @media screen and (min-width:768px) {
     section {
         width: 80vw;

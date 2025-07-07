@@ -272,10 +272,10 @@ h2 span, .home h2::first-letter, .logo span::first-letter {
 }
 
 .about-img {
-    height:400px;
+    height:350px;
     background: url('../images/halteres-background.jpg') no-repeat center center;
     background-size:cover;
-    opacity: 0.6;
+    opacity: 0.5;
     border-radius:10px;
     margin-top:10px;
 }
