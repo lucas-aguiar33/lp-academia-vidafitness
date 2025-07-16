@@ -168,6 +168,10 @@
         height: 260px;
     }
 
+    .card span {
+        font-size:1.8rem;
+    }
+
     .services {
         padding: 20px 55px;
     }

@@ -192,12 +192,13 @@ h2 span, .home h2::first-letter, .logo span::first-letter {
     display: inline-block;
     width:250px;
     height: 250px;
-    margin-right: 20px;
+    margin-right: 30px;
     margin-bottom: 40px;
     border-radius:50%;
     border:1px solid black;
     position:relative;
     transition: transform 0.2s;
+
 }
 
 .card:hover{
@@ -205,7 +206,7 @@ h2 span, .home h2::first-letter, .logo span::first-letter {
 }
 
 .card span {
-    font-size:1.8rem;
+    font-size:1.6rem;
     font-weight: bold;
     position:absolute;
     top:50%;
